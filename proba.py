@@ -1,5 +1,7 @@
-# a = []
-# for i in range(10):
-# 	a.append(i)
-
-# print(a[5:][:2])
+A, B, C, D = map(int, input().split())
+tr = B - D
+op = 0
+if tr < 0:
+    op = abs(tr)
+res = A + op * C
+print(res)
